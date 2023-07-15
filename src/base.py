@@ -143,5 +143,5 @@ compile_tex(output["latex"])
 output["outline"]
 
 
-write_string_to_file('narrative_' + TOPIC + '.txt', output["narrative"])        
-write_string_to_file('outline_' + TOPIC + '.txt', output["outline"])        
+write_string_to_file('../data/narrative_' + TOPIC + '.txt', output["narrative"])        
+write_string_to_file('../data/outline_' + TOPIC + '.txt', output["outline"])        
