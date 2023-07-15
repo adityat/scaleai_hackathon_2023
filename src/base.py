@@ -7,7 +7,9 @@ from langchain.llms import OpenAI
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain.chains import SimpleSequentialChain, SequentialChain
+import sys
 
+TOPIC = sys.argv[1]
 
 
 pdflatex_path = "/Library/TeX/texbin"  # for macOS
@@ -136,7 +138,7 @@ def process_prompt(prompt):
 
 
 
-TOPIC = "Sorting algorithms"
+#TOPIC = "Sorting algorithms"
 output = process_prompt(TOPIC)
 compile_tex(output["latex"])
 
