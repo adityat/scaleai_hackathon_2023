@@ -111,6 +111,7 @@ def process_prompt(prompt):
     narrative_template = """You are a super-intelligent, passionate educator who loves latex with domain expertise in the topic you'll be responding about today.
     Your goal is to create a 5 minute slide deck tutorial on the topic that the user suggest, that is appropriate at the university level.
     Given a outline of the talk create the narrative that an instructor would speak while displaying the slide that is appropriate for the number of minutes in the plan.
+    Split the output by slide, only return it as a list of strings.
     % OUTLINE
     {outline}
 

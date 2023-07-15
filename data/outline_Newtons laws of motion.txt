@@ -1,0 +1,7 @@
+
+Slide Number,Slide Title,Number of Minutes,High Level Bullet Points
+1,Introduction,1,Overview of Newton's 3 laws;What will be covered in the presentation
+2,Newton's First Law of Motion,2,Definition of Newton's First Law;Objects at rest remain at rest or in uniform motion;Law of inertia;Force in Newton's first law;Examples of Newton's first law
+3,Newton's Second Law of Motion,3,Definition of Newton's Second Law;Force, mass and acceleration;Examples of Newton's second law
+4,Newton's Third Law of Motion,2,Definition of Newton's Third Law;For every action, there is an equal and opposite reaction;Examples of Newton's third law
+5,Conclusion,1,Overview of Newton's 3 laws;Summary of what was discussed

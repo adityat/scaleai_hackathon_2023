@@ -1,0 +1,15 @@
+
+Slide 1: Introduction (1 Minute)
+Welcome everyone! Today we will be discussing Newton's 3 laws of motion. We will cover what each law means, definition, and examples. 
+
+Slide 2: Newton's First Law of Motion (2 Minutes)
+Newton's first law of motion, also known as the law of inertia, states that an object at rest will remain at rest, and an object in motion will remain in uniform motion, unless acted upon by an outside force. The force mentioned in Newton’s first law is the net force, which is the sum of all forces on an object. Examples of Newton's first law include a ball at rest on a table or a car moving at a constant speed. 
+
+Slide 3: Newton's Second Law of Motion (3 Minutes)
+Newton's second law of motion is stated as the force equals mass times acceleration, or F=ma. This means that the more massive an object is, the more force is needed to accelerate it. This law also states that the acceleration of an object is directly proportional to the net force applied, and inversely proportional to its mass. Examples of Newton's second law include a cart pulled by a horse and a rocket launching. 
+
+Slide 4: Newton's Third Law of Motion (2 Minutes)
+Newton's third law of motion states that for every action, there is an equal and opposite reaction. This law explains the behavior of objects when they interact. When two objects interact, they exert forces on each other. The size of the forces on the first object equals the size of the force on the second object, but in the opposite direction. Examples of Newton's third law include a hammer hitting a nail and a person jumping off a diving board. 
+
+Slide 5: Conclusion (1 Minute)
+In conclusion, we have discussed Newton's 3 laws of motion. We have covered the definitions of each law, and provided examples of each. Thank you for your time, and I hope you now have a better understanding of Newton's 3 laws.
