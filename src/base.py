@@ -99,6 +99,7 @@ def process_prompt(prompt):
     Make sure there's something in there for all levels of students. 
     Your slides should not read like notes for yourself but a finished product that is self-explanatory to students who read it.
     In the bullet points, do not include semi-headings but use complete sentences.
+    DO NOT include instructions to your self in the content of the slides. 
     Do NOT include the time duration of each slide in the title. 
     Remember to fill in details from the bullet points you're given, make sure there's no images in it and include details but keep it under 2500 tokens.
     % OUTLINE
@@ -122,7 +123,7 @@ def process_prompt(prompt):
     Make sure that the text is appropriate for the number of minutes planned for the specific slide for an instructor that speaks faster than average.
 
     Split the output by slide number. Output in a dictionary format with the key as the slide number and the value as the text to be spoken for the slide. 
-    The output should be a SINGLE dictionary. 
+    The output should be a SINGLE dictionary with the first character. Do NOT mention output variable, only the dictionary. The first character of your response should be the opening curly brace of the dictionary.
     
 
 
