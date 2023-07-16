@@ -5,7 +5,7 @@ from pdf2image import convert_from_path
 from moviepy.editor import ImageSequenceClip, AudioFileClip, concatenate_audioclips
 
 # Path to your files
-pdf_file = 'presentation.pdf'
+pdf_file = '../data/presentation.pdf'
 audio_folder = '../data/audio_files'  # Folder containing your audio files
 
 # Convert PDF to list of images

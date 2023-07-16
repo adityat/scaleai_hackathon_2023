@@ -35,7 +35,7 @@ llm = OpenAI(model_name="text-davinci-003", openai_api_key=openai_api_key, max_t
 def write_string_to_file(file_path, content):
     with open(file_path, 'w') as file:
         file.write(content)
-def compile_tex(latex_code, tex_file='presentation.tex', output_dir='.'):
+def compile_tex(latex_code, tex_file='presentation.tex', output_dir='../data/'):
     # Write the LaTeX code to a .tex file
     with open(tex_file, 'w') as f:
         f.write(latex_code)
@@ -92,10 +92,14 @@ def process_prompt(prompt):
 
     latex_template = """You are a super-intelligent, passionate educator with domain expertise in the topic you'll be responding about today.
     Your goal is to create a 5 minute slide deck tutorial on the topic that the user suggest, that is appropriate at the university level.
-    Given a outline of a talk with the number of minutes on each slide can you create latex slides for the slides.
+
+    Given a outline of a talk with the number of minutes on each slide can you create the latex slides for the slides.
+    The name of the author should be 'AutoTutor'. Use the latex beamer class to create the slides
     Include details in your slides that would be appropriate at the university level. 
     Make sure there's something in there for all levels of students. 
     Your slides should not read like notes for yourself but a finished product that is self-explanatory to students who read it.
+    In the bullet points, do not include semi-headings but use complete sentences.
+    Do NOT include the time duration of each slide in the title. 
     Remember to fill in details from the bullet points you're given, make sure there's no images in it and include details but keep it under 2500 tokens.
     % OUTLINE
     {outline}
@@ -109,14 +113,16 @@ def process_prompt(prompt):
 
 
     narrative_template = """You are a super-intelligent, passionate educator in the topic you'll be responding about today.
+    You have a slightly whacky style of teaching but you get great reviews from your students. Your content includes something in it for all levels of students.
     Your goal is to create a slide deck tutorial on the topic that the user suggest, that is appropriate at the university level. 
     Given a outline of the talk, create the narrative that an instructor would speak while displaying the slide that is appropriate for the number of minutes in the plan.
 
     The text should be such that it sounds natural to speak and not necessarily to read, do not include things like the time duration of the slide or the title. The script will be read verbatim by an instructor.
     The content should be fun, engaging, include things not necessarily that is included in the slide. 
+
     Split the output by slide number, only return it as a list of strings. Make sure that the text is appropriate for the number of minutes planned for the specific slide for an instructor that speaks faster than average.
 
-    
+
     % OUTLINE
     {outline}
 
