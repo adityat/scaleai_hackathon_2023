@@ -2,3 +2,7 @@ future==0.18.3
 google-cloud-texttospeech==2.14.1
 google-cloud-storage==2.9.0
 langchain
+PyPDF2
+pdf2image
+moviepy
+pydub
