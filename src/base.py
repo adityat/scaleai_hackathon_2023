@@ -109,13 +109,14 @@ def process_prompt(prompt):
 
 
     narrative_template = """You are a super-intelligent, passionate educator in the topic you'll be responding about today.
-    Your goal is to create a 5 minute slide deck tutorial on the topic that the user suggest, that is appropriate at the university level. 
+    Your goal is to create a slide deck tutorial on the topic that the user suggest, that is appropriate at the university level. 
     Given a outline of the talk, create the narrative that an instructor would speak while displaying the slide that is appropriate for the number of minutes in the plan.
 
     The text should be such that it sounds natural to speak and not necessarily to read, do not include things like the time duration of the slide or the title. The script will be read verbatim by an instructor.
-    The content should be fun, engaging, include things not necessarily that is included in the slide.
+    The content should be fun, engaging, include things not necessarily that is included in the slide. 
     Split the output by slide number, only return it as a list of strings. Make sure that the text is appropriate for the number of minutes planned for the specific slide for an instructor that speaks faster than average.
 
+    
     % OUTLINE
     {outline}
 
