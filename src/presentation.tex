@@ -1,0 +1,97 @@
+
+\documentclass{beamer}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\title{Sorting Algorithms Tutorial by AutoTutor}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Introduction to Sorting Algorithms}
+\begin{itemize}
+    \item Sorting algorithms are methods of arranging data in a desired order.
+    \item Criteria for sorting algorithms include stability, time and space complexity, and efficiency. 
+    \item Time complexity is the amount of time it takes to complete a sorting algorithm, while space complexity is the amount of memory it takes. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Bubble Sort}
+\begin{itemize}
+    \item Bubble sort is a sorting algorithm in which smaller elements are moved to the beginning of the array. 
+    \item Algorithm: repeatedly swap adjacent elements if they are not in the desired order. 
+    \item Time complexity: O(n$^2$) 
+    \item Space complexity: O(1) 
+    \item Pros: easy to implement, stable, 
+    \item Cons: slow, not efficient for large datasets 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Selection Sort}
+\begin{itemize}
+    \item Selection sort is a sorting algorithm in which elements are selected from one end of the array and placed into the other end. 
+    \item Algorithm: repeatedly find the minimum element from the unsorted part and move it to the sorted part. 
+    \item Time complexity: O(n$^2$) 
+    \item Space complexity: O(1) 
+    \item Pros: easy to implement, in-place
+    \item Cons: slow, not efficient for large datasets 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Insertion Sort}
+\begin{itemize}
+    \item Insertion sort is a sorting algorithm in which elements are compared to the elements before them in the array. 
+    \item Algorithm: repeatedly insert the current element into the sorted part. 
+    \item Time complexity: O(n$^2$) 
+    \item Space complexity: O(1) 
+    \item Pros: easy to implement, in-place, efficient for small datasets 
+    \item Cons: slow for large datasets 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Merge Sort}
+\begin{itemize}
+    \item Merge sort is a sorting algorithm in which elements are divided into two parts and then merged into one. 
+    \item Algorithm: divide the array into two halves, sort them recursively, and merge them.
+    \item Time complexity: O(nlogn) 
+    \item Space complexity: O(n) 
+    \item Pros: efficient, stable, works with linked lists 
+    \item Cons: requires extra memory 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Quick Sort}
+\begin{itemize}
+    \item Quick sort is a sorting algorithm in which a pivot element is used to divide the array into two parts. 
+    \item Algorithm: pick a pivot element, divide the array into two parts according to the pivot, and then recursively sort them. 
+    \item Time complexity: O(nlogn) 
+    \item Space complexity: O(logn) 
+    \item Pros: efficient, in-place 
+    \item Cons: not stable, worst case time complexity is O(n$^2$)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Heap Sort}
+\begin{itemize}
+    \item Heap sort is a sorting algorithm in which elements are sorted using a heap data structure. 
+    \item Algorithm: build a heap from the array elements, remove the root element and insert it into the sorted part, and repeat the process. 
+    \item Time complexity: O(nlogn) 
+    \item Space complexity: O(1) 
+    \item Pros: efficient, in-place, fast for large datasets 
+    \item Cons: not stable 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Conclusion}
+\begin{itemize}
+    \item Summary of the different sorting algorithms: Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort, Heap Sort 
+    \item Considerations for choosing the most suitable algorithm: time and space complexity, stability, and efficiency 
+    \item Demonstration of the code for one of the algorithms: Quick Sort 
+\end{itemize}
+\end{frame}
+
+\end{document}

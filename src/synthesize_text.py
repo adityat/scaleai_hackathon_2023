@@ -23,6 +23,7 @@ Example usage:
 """
 
 import argparse
+import sys 
 
 
 # [START tts_synthesize_text]
@@ -51,7 +52,8 @@ def synthesize_text(text):
     )
 
     # The response's audio_content is binary.
-    with open("output.mp3", "wb") as out:
+    iteration = text[-1]
+    with open("../data/audio_files/output" + str(iteration) + ".mp3", "wb") as out:
         out.write(response.audio_content)
         print('Audio content written to file "output.mp3"')
 
@@ -103,11 +105,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
-    group = parser.add_mutually_exclusive_group(required=True)
+    group = parser.add_mutually_exclusive_group(required=False)
     group.add_argument("--text", help="The text from which to synthesize speech.")
-    group.add_argument(
-        "--ssml", help="The ssml string from which to synthesize speech."
-    )
+    #group.add_argument("--iter", help="iter.")
 
     args = parser.parse_args()
 

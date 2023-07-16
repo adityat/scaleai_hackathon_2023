@@ -119,8 +119,11 @@ def process_prompt(prompt):
 
     The text should be such that it sounds natural to speak and not necessarily to read, do not include things like the time duration of the slide or the title. The script will be read verbatim by an instructor.
     The content should be fun, engaging, include things not necessarily that is included in the slide. 
+    Make sure that the text is appropriate for the number of minutes planned for the specific slide for an instructor that speaks faster than average.
 
-    Split the output by slide number, only return it as a list of strings. Make sure that the text is appropriate for the number of minutes planned for the specific slide for an instructor that speaks faster than average.
+    Split the output by slide number. Output in a dictionary format with the key as the slide number and the value as the text to be spoken for the slide. 
+    The output should be a SINGLE dictionary. 
+    
 
 
     % OUTLINE
